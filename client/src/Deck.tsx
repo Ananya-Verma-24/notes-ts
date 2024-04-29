@@ -47,7 +47,7 @@ export default function Deck() {
         ))}
       </ul>
       <form onSubmit={handleCreateDeck}>
-        <label htmlFor="card-text">Card Text</label>
+        <label htmlFor="card-text">Note Text</label>
         <input
           id="card-text"
           value={text}
@@ -55,7 +55,7 @@ export default function Deck() {
             setText(e.target.value);
           }}
         />
-        <button>Create Card</button>
+        <button>Create Note</button>
       </form>
     </div>
   );

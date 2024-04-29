@@ -32,19 +32,19 @@ function App() {
   return (
     <div className="container">
       <div className="App">
-        <h1>Your Decks</h1>
+        <h1>Your Notebooks</h1>
 
         <ul className="decks">
           {decks.map((deck) => (
             <li key={deck._id}>
-              <button onClick={() => handleDeleteDeck(deck._id)}>X</button>
+              <button style={{ background: '#0C0124' }} onClick={() => handleDeleteDeck(deck._id)}>X</button>
 
-              <Link to={`decks/${deck._id}`}>{deck.title}</Link>
+              <Link style={{ color: 'white' }} to={`decks/${deck._id}`}>{deck.title}</Link>
             </li>
           ))}
         </ul>
         <form onSubmit={handleCreateDeck}>
-          <label htmlFor="deck-title">Deck Title</label>
+          <label htmlFor="deck-title">Notebook Title</label>
           <input
             id="deck-title"
             value={title}
@@ -52,7 +52,7 @@ function App() {
               setTitle(e.target.value);
             }}
           />
-          <button>Create Deck</button>
+          <button>Create Notes</button>
         </form>
       </div>
     </div>

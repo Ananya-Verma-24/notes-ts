@@ -22,7 +22,7 @@
   margin: 0 auto;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  color: black;
+  color: white;
 }
 
 .decks li {
@@ -32,8 +32,9 @@
   align-items: center;
   height: 120px;
   background: white;
-  border: 1px solid white;
+  color: white;
   border-radius: 10px;
+  background: linear-gradient(324deg, rgba(19,46,126,1) 16%, rgba(70,106,193,1) 45%, rgba(151,179,236,1) 87%);
 }
 
 .decks li button {
@@ -41,4 +42,14 @@
   font-size: 10px;
   top: 5px;
   right: 5px;
+}
+
+input{
+  background-color: rgba(151,179,236,0.2);
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgba(30, 32, 35, 0.5);
 }
